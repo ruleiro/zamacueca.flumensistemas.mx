@@ -50,6 +50,10 @@ public class Customer {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "address")
+    private String Address;
+    
+
     
         @JsonIgnore
         @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
