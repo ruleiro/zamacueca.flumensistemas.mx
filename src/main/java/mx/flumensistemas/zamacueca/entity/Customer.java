@@ -47,6 +47,9 @@ public class Customer {
     @Column(name = "phone_number")
     private String phoneNumber;
 
+    @Column(name = "email")
+    private String email;
+
     
         @JsonIgnore
         @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
